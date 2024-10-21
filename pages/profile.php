@@ -94,10 +94,52 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
             color: #000;
             border-radius: 25px;    
         }
+
+        
+        .float-container {
+            position: fixed;
+            margin: auto;
+            bottom: 10px;
+            height: 50px;
+            background-color: #fff;
+            width: max-content;
+            min-width: 200px;
+            display: flex;
+            border-radius: 25px;
+            border: 1px solid #aeaeae;
+            box-shadow: 0px 0px 10px rgb(174, 174, 174,);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .icon-btn {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            color: #fff;
+            display: grid;
+            place-content: center;
+            border-radius: 50%;
+            transition: .3s ease;
+        }
+
+        .icon-btn:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .icon-btn:hover svg {
+            transform: rotate(360deg);
+        }
     </style>
 </head>
 <body class="min-h-screen">
     <?php include '../partials/header.php' ?>
+    <?php include '../partials/menu.php'; ?>
+
     <main class="container mx-auto px-4 pt-24 pb-8">
         <h2 class="text-3xl font-bold mb-8">My Profile</h2>
         

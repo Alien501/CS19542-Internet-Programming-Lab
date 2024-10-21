@@ -158,6 +158,11 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
             border-radius: 4px;
             cursor: pointer;
         }
+
+        .bottom-link {
+            display: block;
+            margin: 5px auto;
+        }
     </style>
 </head>
 <body>
@@ -179,7 +184,7 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
             </div>
             <button type="submit" class="primary-button">Login</button>
         </form>
-        <a href="./signup.php" class="links">Create New Account</a>
+        <a href="./signup.php" class="links bottom-link">Create New Account</a>
     </div>
 
     <script>
